@@ -17,11 +17,10 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(process.env.PORT, process.env.IP, function(err) {
+app.listen(process.env.PORT || 3001, process.env.IP || "localhost", function(err) {
   if (err) {
     console.log(err);
     return;
   }
-
-  console.log('Listening at http://localhost:3000');
+  console.log("localhost:3001 Running...");
 });

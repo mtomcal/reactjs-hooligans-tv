@@ -10,28 +10,28 @@ var Home = React.createClass({
     },
     render() {
         var style = {};
-        
+
         const videos = this.props.queryData.data.map(function (res, index) {
           return (<div className="col-lg-4">
-            <Player 
+            <Player
               key={index}
-              source={res.snippet.resourceId.videoId} 
+              source={res.snippet.resourceId.videoId}
               title={res.snippet.title}
               autoplay={true}
               imageURL={res.snippet.thumbnails.high.url}
             />
           </div>);
         });
-        
+
         const offense = videos.filter((item, index) => {
           return index < 6;
-          
+
         });
-        
+
         const defense = videos.filter((item, index) => {
           return index >= 6 && index < 12;
         });
-        
+
         return (
         <div>
             <div className="container-fluid" style={style}>
@@ -72,5 +72,5 @@ var Home = React.createClass({
 
 export default Containers.query.createContainer(Home, {
   method: 'get',
-  route: 'https://json-server-mtomcal.c9.io/videos',
+  route: 'http://127.0.0.1:3000/videos',
 })
