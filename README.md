@@ -1,17 +1,17 @@
 Hooligans TV – React UI Demonstration
 =======================================
 
-#Tech
+##Tech
 
-React, Reflux, Higher Order Components, Axios, Webpack, React Transform Boilerplate
+React, Reflux, Higher Order Components, Axios, Babel (ES2015), Webpack, React Transform Boilerplate
 
-#Install
+##Install
 
 ```
 npm install
 ```
 
-#Run
+##Run
 
 ```
 npm start
