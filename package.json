@@ -1,34 +1,14 @@
 {
-  "name": "react-transform-boilerplate",
+  "name": "reactjs-hooligans-tv",
   "version": "0.1.0",
-  "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
+  "description": "A Tech Demo",
   "scripts": {
     "start": "node server.js & json-server soccervids.json",
+    "test": "karma start",
     "lint": "eslint src"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gaearon/react-transform-boilerplate.git"
-  },
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "babel",
-    "react-transform"
-  ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "Michael Tomcal <michael@twoeyetech.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gaearon/react-transform-boilerplate/issues"
-  },
-  "homepage": "https://github.com/gaearon/react-transform-boilerplate",
   "devDependencies": {
     "babel-core": "^5.4.7",
     "babel-eslint": "^3.1.9",
@@ -48,11 +28,22 @@
     "axios": "^0.5.4",
     "bootstrap": "^3.3.5",
     "bootstrap-webpack": "0.0.3",
+    "chai": "^3.2.0",
     "css-loader": "^0.17.0",
     "file-loader": "^0.8.4",
     "flowtype": "^1.0.0",
     "json-server": "^0.7.27",
+    "karma": "^0.13.9",
+    "karma-cli": "^0.1.0",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-phantomjs-shim": "^1.1.1",
+    "karma-sourcemap-loader": "^0.3.5",
+    "karma-spec-reporter": "0.0.20",
+    "karma-webpack": "^1.7.0",
     "lodash": "^3.10.1",
+    "mocha": "^2.3.2",
+    "phantomjs": "^1.9.18",
     "react": "^0.13.0",
     "react-bootstrap": "^0.25.1",
     "react-router": "^0.13.3",
