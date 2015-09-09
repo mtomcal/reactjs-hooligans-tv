@@ -6,7 +6,7 @@
     "start": "node server.js & json-server soccervids.json",
     "test": "karma start",
     "build": "webpack",
-    "build-prod": "webpack -p",
+    "build-prod": "NODE_ENV=production webpack -p",
     "lint": "eslint src"
   },
   "author": "Michael Tomcal <michael@twoeyetech.com>",

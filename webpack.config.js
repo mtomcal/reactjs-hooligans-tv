@@ -1,8 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 
-module.exports = {
-  devtool: 'eval',
+var config = {
   entry: [
     'webpack-hot-middleware/client',
     './src/index'
@@ -30,3 +29,9 @@ module.exports = {
     ]
   }
 };
+
+if (process.env.NODE_ENV !== "production") {
+  config.devtool = 'eval';
+}
+
+module.exports = config;
