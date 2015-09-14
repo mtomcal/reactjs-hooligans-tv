@@ -3,6 +3,7 @@ import { Jumbotron, Button } from 'react-bootstrap';
 import Player from '../player';
 import { Containers } from '../data';
 import { Card } from '../cards';
+import {base_url} from '../config.js';
 
 var Home = React.createClass({
     propTypes: {
@@ -72,5 +73,5 @@ var Home = React.createClass({
 
 export default Containers.query.createContainer(Home, {
   method: 'get',
-  route: 'http://127.0.0.1:3000/videos',
+  route: base_url + '/videos',
 })
