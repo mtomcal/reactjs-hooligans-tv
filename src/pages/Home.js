@@ -73,5 +73,5 @@ var Home = React.createClass({
 
 export default Containers.query.createContainer(Home, {
   method: 'get',
-  route: base_url + '/videos',
+  route: api_url + '/videos',
 })
